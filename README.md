@@ -33,6 +33,9 @@ https://app.swaggerhub.com/templates-docs/BRANDONVASQUEZBARRET/Coordinadora/1.0.
 # Base de datos
 La base de datos está en la nube de AWS por el servicio de RDS, por lo que no es necesario construirla para la ejecución de este proyecto
 
+# Servicio de notificación
+Como no se solicitó un endpoint para este servicio, entonces se implementó que las notificaciones fueran enviadas cada vez que se inicie el proyecto de Flask, los correos se pueden registrar en el endpoint de registrar asistentes
+
 # Estructuras DDL y DML
 En el repositorio verán dos archivos .sql los cuales contienen la estructura de la base de datos del proyecto
 

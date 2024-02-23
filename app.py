@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from os.path import join, dirname
 from datetime import datetime, timedelta
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required
+from mailer import notificaciones
 
 ruta_archivo_env = join(dirname(__file__), '.env')
 load_dotenv(ruta_archivo_env)
@@ -23,6 +24,27 @@ jwt = JWTManager(app)
 host = os.getenv('HOST')
 user = os.getenv('USER')
 password = os.getenv('PASSWORD')
+
+try:
+    conn = psycopg2.connect(host=host, database=os.getenv('DATABASE'), user=user, password=password, cursor_factory=RealDictCursor)
+    sql = f"""SELECT * FROM eventos"""
+    cur = conn.cursor()
+    cur.execute(sql)
+    results = cur.fetchall()
+    usuarios = []
+    if len(results) > 0:
+        cur.close()
+        data = []
+        for i in results:
+            data.append(i)
+
+        for i in data:
+            for j in i["asistentes"]:
+                usuarios.append(str(j))
+    if len(usuarios) > 0:
+        notificaciones(usuarios)
+except Exception as err:
+    print("Error en las notificaciones")
 
 @app.route("/iniciarSesion", methods=["POST"])
 def crear_token():
