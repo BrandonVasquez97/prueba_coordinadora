@@ -39,11 +39,11 @@ En el repositorio verán dos archivos .sql los cuales contienen la estructura de
 # Tiempos de respuesta de la API
 Veremos unos tiempos de respuesta de la API, en el video se podrán ver los tiempos aquí descritos
 
-Inicio de sesión: 964ms
-Crear evento: 829ms
-Listar todos los eventos: 848ms
-Listar evento específico: 893ms
-Actualizar evento: 962ms
-Eliminar evento: 915ms
-Registrar asistentes: 935ms
-Obtener dirección y puntos de referencia: 985ms
+Inicio de sesión: 964ms,
+Crear evento: 829ms,
+Listar todos los eventos: 848ms,
+Listar evento específico: 893ms,
+Actualizar evento: 962ms,
+Eliminar evento: 915ms,
+Registrar asistentes: 935ms,
+Obtener dirección y puntos de referencia: 985ms,
