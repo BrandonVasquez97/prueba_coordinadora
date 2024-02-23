@@ -4,7 +4,7 @@ Bienvenido, para poder acceder a la API será necesario seguir esta serie de pas
 # Instalación
 Por temas de seguridad el archivo .env no se puede subir al repositorio, este archivo es necesario, si no se coloca en la raiz del proyecto que es junto al app.py no funcionara correctamente, el archivo se puede descargar de este link:
 
-https://drive.google.com/file/d/17nC68VKb3KPzPgU2DRoVnIF1cK4Aefmo/view
+https://drive.google.com/file/d/1jK9GZfQkgAmmViZW0T5fI0Yq2gBIwtWq/view?usp=sharing
 
 Ahora será necesario instalar un entorno virtual, por lo que se usará este comando:
 py -m venv env (Para Python versión 3.12)
