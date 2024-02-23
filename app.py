@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required
 from mailer import notificaciones
 
-ruta_archivo_env = join(dirname(__file__), '.env')
+ruta_archivo_env = join(dirname(__file__), 'cred.env')
 load_dotenv(ruta_archivo_env)
 
 app = Flask(__name__)
@@ -23,7 +23,7 @@ jwt = JWTManager(app)
 
 host = os.getenv('HOST')
 user = os.getenv('USER')
-password = os.getenv('PASSWORD')
+password = os.getenv('PASSWORD_BD')
 
 try:
     conn = psycopg2.connect(host=host, database=os.getenv('DATABASE'), user=user, password=password, cursor_factory=RealDictCursor)

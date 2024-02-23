@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 from os.path import join, dirname
 from psycopg2.extras import RealDictCursor
 
-ruta_archivo_env = join(dirname(__file__), '.env')
+ruta_archivo_env = join(dirname(__file__), 'cred.env')
 load_dotenv(ruta_archivo_env)
 
 host = os.getenv('HOST')
 user = os.getenv('USER')
-password = os.getenv('PASSWORD')
+password = os.getenv('PASSWORD_BD')
 
 class eventos:
     def __init__(self, fecha: str, nombre: str, longitud: float, latitud: float, codigo: str):

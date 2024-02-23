@@ -2,9 +2,9 @@
 Bienvenido, para poder acceder a la API será necesario seguir esta serie de pasos para ejecutarlo correctamente, se recomienda ejecutarlo en un ambiente Windows y usar una terminal CMD
 
 # Instalación
-Por temas de seguridad el archivo .env no se puede subir al repositorio, este archivo es necesario, si no se coloca en la raiz del proyecto que es junto al app.py no funcionara correctamente, el archivo se puede descargar de este link:
+Por temas de seguridad el archivo cred.env no se puede subir al repositorio, este archivo es necesario, si no se coloca en la raiz del proyecto que es junto al app.py no funcionara correctamente, el archivo se puede descargar de este link:
 
-https://drive.google.com/file/d/1jK9GZfQkgAmmViZW0T5fI0Yq2gBIwtWq/view?usp=sharing
+https://drive.google.com/file/d/10ig0YdiCu-4D3s6DvBymlPjhSoCHTLJA/view
 
 Ahora será necesario instalar un entorno virtual, por lo que se usará este comando:
 py -m venv env (Para Python versión 3.12)

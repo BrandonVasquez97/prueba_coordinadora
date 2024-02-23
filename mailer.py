@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from os.path import join, dirname
 
-ruta_archivo_env = join(dirname(__file__), '.env')
+ruta_archivo_env = join(dirname(__file__), 'cred.env')
 load_dotenv(ruta_archivo_env)
 
 def notificaciones(correos):
