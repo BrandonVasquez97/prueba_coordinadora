@@ -11,7 +11,7 @@ from datetime import datetime
 from flask_jwt_extended import create_access_token
 from googleplaces import GooglePlaces
 
-ruta_archivo_env = join(dirname(__file__), '.env')
+ruta_archivo_env = join(dirname(__file__), 'cred.env')
 load_dotenv(ruta_archivo_env)
 
 class MainTestCase(TestCase):
