@@ -2,7 +2,11 @@
 Bienvenido, para poder acceder a la API será necesario seguir esta serie de pasos para ejecutarlo correctamente, se recomienda ejecutarlo en un ambiente Windows y usar una terminal CMD
 
 # Instalación
-Primero será necesario instalar un entorno virtual, por lo que se usará este comando:
+Por temas de seguridad el archivo .env no se puede subir al repositorio, este archivo es necesario, si no se coloca en la raiz del proyecto que es junto al app.py no funcionara correctamente, el archivo se puede descargar de este link:
+
+https://drive.google.com/file/d/17nC68VKb3KPzPgU2DRoVnIF1cK4Aefmo/view
+
+Ahora será necesario instalar un entorno virtual, por lo que se usará este comando:
 py -m venv env (Para Python versión 3.12)
 python -m venv env (Para Python versión 3.11)
 

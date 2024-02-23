@@ -320,7 +320,7 @@ def registrar_asistentes():
         return jsonify(response)
     validacion = isinstance(asistentes, list)
     if validacion is False:
-        response = {'respuesta': "El campo asistentes debe ser una lista o arreglos de nombres"}
+        response = {'respuesta': "El campo asistentes debe ser una lista o arreglos de correos, también de nombres, pero no recibiría notificación"}
         return jsonify(response)
     if app.config['TESTING'] is True:
         database = os.getenv('TEST_DATABASE')
